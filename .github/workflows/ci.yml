@@ -30,6 +30,7 @@ jobs:
             *.coveralls.io
             github.com:443
             *.hex.pm:443
+            *snapcraft.io
 
       - name: Checkout Github repo
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
