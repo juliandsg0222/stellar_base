@@ -25,12 +25,12 @@ jobs:
         uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
         with:
           disable-sudo: true
-          egress-policy: block
-          allowed-endpoints: >
-            *.coveralls.io:443
-            github.com:443
-            *.hex.pm:443
-            *.coveralls.io:80
+          # egress-policy: block
+          # allowed-endpoints: >
+          #   *.coveralls.io:443
+          #   github.com:443
+          #   *.hex.pm:443
+          #   *.coveralls.io:80
 
       - name: Checkout Github repo
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
