@@ -27,10 +27,10 @@ jobs:
           disable-sudo: true
           egress-policy: block
           allowed-endpoints: >
-            *.coveralls.io
+            coveralls.io:443
             github.com:443
             *.hex.pm:443
-            *snapcraft.io
+            snapcraft.io:443
 
       - name: Checkout Github repo
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
